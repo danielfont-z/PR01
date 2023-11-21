@@ -18,7 +18,9 @@ CREATE TABLE `table` (
     capacity INT NULL,
     available BOOLEAN NULL,
     room_id INT NULL,
-    FOREIGN KEY (room_id) REFERENCES room(id)
+    user_id INT NULL
+    FOREIGN KEY (room_id) REFERENCES room(id),
+    FOREIGN KEY (user_id) REFERENCES user(id)
 );
 
 CREATE TABLE `tableRegister` (
