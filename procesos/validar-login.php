@@ -9,7 +9,6 @@
 
     else 
     {
-        // Assuming you have variables $email and $password from your form
         $email = $_POST["email"];
         $pwd = $_POST["pwd"];
 
